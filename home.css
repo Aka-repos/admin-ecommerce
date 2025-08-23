@@ -1,0 +1,543 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header Base */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+/* Logo y typing */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    height: 45px;
+    width: 45px;
+    border-radius: 8px;
+}
+
+.typing-effect {
+    font-size: 1.6rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: none;
+    animation: typing 2s steps(8, end), blink 0.75s step-end infinite;
+}
+
+.typing-effect .pharma {
+    color: #18aab0;
+}
+
+.typing-effect .pty {
+    color: #86c442;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 8.8ch; }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: #18aab0; }
+}
+
+/* Lupa (Search Button) */
+.search-btn {
+    color: #18aab0;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.search-btn:hover {
+    color: #86c442;
+    transform: scale(1.2);
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    color: #555;
+    font-size: 1.1rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.icon:hover {
+    color: #18aab0;
+    transform: scale(1.2);
+}
+
+.icon.youtube:hover { color: red; }
+.icon.instagram:hover { color: #e1306c; }
+.icon.twitter:hover { color: #1da1f2; }
+.icon.facebook:hover { color: #3b5998; }
+
+/* Usuario y Carrito */
+.user-cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-btn {
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.login-btn i {
+    margin-right: 5px;
+}
+
+.login-btn:hover {
+    color: #18aab0;
+}
+
+.cart-btn {
+    font-size: 1.3rem;
+    color: #86c442;
+    transition: transform 0.3s;
+}
+
+.cart-btn:hover {
+    transform: scale(1.2);
+}
+
+/* Nav principal */
+.main-nav {
+    background-color: #18aab0;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.main-nav a:hover {
+    color: #86c442; /* verde lime */
+    text-shadow: 0 0 8px #86c442aa; /* efecto luz suave */
+    background-color: transparent; /* sin fondo */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* SECCIÓN DE NOTICIAS */
+.news-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 40px;
+    background-color: #fef9f4;
+}
+
+.news-card {
+    width: 320px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 3px solid #3c8c59;
+}
+
+.news-card h2 {
+    font-size: 1.2rem;
+    padding: 15px 20px 0 20px;
+    color: #333;
+}
+
+.news-card p {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+    color: #555;
+    text-align: justify;
+}
+
+.news-btn {
+    display: block;
+    margin: 15px 20px 20px 20px;
+    text-align: center;
+    background-color: #3c8c59;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.news-btn:hover {
+    background-color: #2f6d45;
+}
+/* Ajustes para la tarjeta con video embebido */
+.news-card.video-card iframe {
+    width: 100%;
+    height: 180px;
+    border: none;
+    border-bottom: 3px solid #3c8c59;
+    border-radius: 0;
+    display: block;
+}
+/* Banner grande */
+.banner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto 20px auto;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Texto verde con efecto typing similar al header */
+.typing-green {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: #86c442;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: none;
+    width: 0;
+    max-width: 100%;
+    margin: 0 auto 40px auto;
+    animation: typing-green 3s steps(40, end) forwards, blink-green 0.75s step-end infinite;
+}
+
+/* Animación typing para el texto verde */
+@keyframes typing-green {
+    from { width: 0; }
+    to { width: 40ch; }
+}
+
+@keyframes blink-green {
+    from, to { border-color: transparent; }
+    50% { border-color: #86c442; }
+}
+footer {
+  background-color: #0b3d4f;
+  color: white;
+  padding: 40px 20px 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  border-left: 4px solid #00c896;
+  padding-left: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 8px 0;
+}
+
+.footer-column ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #00ffc3;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ccc;
+  font-size: 22px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00ffc3;
+  transform: scale(1.2);
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+.subscribe-form button {
+  background-color: #00c896;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #009e78;
+  transform: scale(1.05);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #1a4c5b;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
+/* Sticky Header + animación al hacer scroll */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* Tamaño reducido al hacer scroll */
+.sticky-header.scrolled .top-header {
+  padding: 5px 20px;
+}
+
+.sticky-header.scrolled .logo img {
+  height: 30px;
+  width: 30px;
+}
+
+.sticky-header.scrolled .typing-effect {
+  font-size: 1.2rem;
+  animation: none;
+  border-right: none;
+}
+
+/* Ocultar redes sociales al hacer scroll */
+.sticky-header.scrolled .social-icons {
+  display: none;
+}
+
+/* Reducir el tamaño del nav también */
+.sticky-header.scrolled .main-nav {
+  padding: 6px 20px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  width: 50%;
+  max-width: 1000px;
+  background-color: #fff;
+  border-radius: 18px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.modal-box {
+  display: flex;
+  width: 100%;
+}
+
+.modal-image {
+  width: 50%;
+}
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-form {
+  width: 50%;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 24px;
+  background: linear-gradient(90deg, cyan, limegreen);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  position: relative;
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  font-size: 18px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: none;
+  background: linear-gradient(90deg, cyan, limegreen);
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.login-btn:hover {
+  transform: scale(1.08);
+}
+
+.extra-links {
+  margin-top: 15px;
+  text-align: center;
+}
+.extra-links a {
+  display: inline-block;
+  margin: 5px 10px;
+  text-decoration: none;
+  color: #555;
+  transition: transform 0.2s ease;
+}
+.extra-links a:hover {
+  transform: scale(1.1);
+}
+.modal-social-icons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.modal-social-icons a {
+  margin: 0 10px;
+  color: #555; /* gris neutro */
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.modal-social-icons a:hover {
+  color: #27ae60; /* verde lime */
+  transform: scale(1.2);
+}
+
+/* Modal “Olvidé” un poco más rectangular */
+.modal-content.modal-olvide{
+  width: 40%;          /* más estrecho que login/registro */
+  max-width: 520px;
+  padding: 35px 30px;
+}
+
+/* Botón cancelar (mismo tamaño, color neutro) */
+.btn-cancel{
+  background: #ccc;
+  color:#333;
+}
+.btn-cancel:hover{
+  background:#bbb;
+}
+
+/* El resto de reglas de .modal-overlay, .login-btn, etc. ya las tienes */
+
