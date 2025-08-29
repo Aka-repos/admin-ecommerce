@@ -281,7 +281,7 @@ if ("add".equals(action)) {
             </div>
         </div>
         <nav class="main-nav">
-            <a href="admin.jsp">Panel Admin</a>
+            <a href="/src/pages/admin.jsp">Panel Admin</a>
             <a href="gestionUsuarios.jsp">Usuarios</a>
             <a href="inventario.jsp">Inventario</a>
             <a href="reportes.jsp">Reportes</a>
