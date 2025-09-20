@@ -7,7 +7,7 @@
   <meta charset="UTF-8" />
   <title>PharmaPTY | Tu farmacia en línea</title>
   <link rel="icon" href="img/coazon.png" />
-  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="./src/styles/home.css" />
   <!-- ICONS: Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
@@ -45,13 +45,15 @@
 
     <nav class="main-nav">
       <a href="home.jsp">Inicio</a>
-      <a href="products.jsp">Productos</a>
+      <a href="src/pages/products.jsp">Productos</a>
+      <a href=""> Servicios </a>
+      <a href=""> Seguros </a>
       <a href="contactus.jsp">Contáctanos</a>
     </nav>
   </header>
 
   <!-- INCLUIR MODALES -->
-  <%@ include file="modal.jsp" %>
+  <%@ include file="/src/utils/modal.jsp" %>
 
     <section class="banner">
       <img src="img/imginicio/pubi1.jpeg" alt="Publicidad PharmaPTY" />
@@ -127,52 +129,7 @@
       <img src="img/imginicio/publi2.jpeg" alt="Publicidad PharmaPTY" />
     </section>
 
-    <footer class="footer">
-      <div class="footer-container">
-        <!-- 1. Misión -->
-        <div class="footer-column">
-          <h3>PharmaPTY</h3>
-          <p>PharmaPTY optimiza el suministro de medicamentos en Panamá mediante soluciones tecnológicas que garantizan
-            calidad y trazabilidad. Apoya a clínicas, hospitales y farmacias con una gestión eficiente del inventario.
-            Su compromiso es brindar un servicio profesional enfocado en la salud pública.</p>
-        </div>
-
-        <!-- 2. Navegador -->
-        <div class="footer-column">
-          <h3>Navegador</h3>
-          <ul>
-            <li><a href="home.html">Inicio</a></li>
-            <li><a href="products.html">Productos</a></li>
-            <li><a href="contactus.html">Contáctanos</a></li>
-          </ul>
-        </div>
-
-        <!-- 3. Redes Sociales -->
-        <div class="footer-column">
-          <h3>Nuestras redes sociales</h3>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/pharma.pty/"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-
-        <!-- 4. Trabaja con nosotros -->
-        <div class="footer-column">
-          <h3>Trabaja con nosotros</h3>
-          <form class="subscribe-form">
-            <input type="email" placeholder="Tu correo" required />
-            <button type="submit">Enviar</button>
-          </form>
-        </div>
-      </div>
-
-      <!-- 5. Derechos reservados -->
-      <div class="footer-bottom">
-        <p>&copy; 2025 PharmaPTY. Todos los derechos reservados.</p>
-      </div>
-    </footer>
+   <%@ include file="src/utils/footer.jsp" %>
 
 </body>
 
