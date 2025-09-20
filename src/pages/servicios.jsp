@@ -53,7 +53,7 @@
           <option value="Laboratorio">Laboratorio</option>
           <option value="Vacunación">Vacunación</option>
           <option value="Enfermería">Enfermería</option>
-          <option value="Telemedicina">Telemedicina</option>
+          
           <option value="Crónicos">Crónicos</option>
           <option value="Fisioterapia">Fisioterapia</option>
           <option value="Odontología">Odontología</option>
