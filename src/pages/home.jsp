@@ -14,12 +14,12 @@
 
 <body>
   <!--INCLUIR HEADAER-->
-  <%@ include file="/src/utils/header.jsp" %>
+  <%@ include file="../utils/header.jsp" %>
   <!-- INCLUIR MODALES -->
-  <%@ include file="/src/utils/modal.jsp" %>
+  <%@ include file="../utils/modal.jsp" %>
 
     <section class="banner">
-      <img src="../../img/imginicio/pubi1.jpeg" alt="Publicidad PharmaPTY" />
+      <img src="${pageContext.request.contextPath}/img/imginicio/pubi1.jpeg" alt="Publicidad PharmaPTY" />
     </section>
 
     <!-- Texto de Noticias -->
@@ -30,7 +30,7 @@
     <section class="news-section">
       <!-- Noticia 1 -->
       <div class="news-card">
-        <img src="img/imginicio/1.webp" alt="Farmacia rural con robot" />
+        <img src="${pageContext.request.contextPath}/img/imginicio/1.webp" alt="Farmacia rural con robot" />
         <h2>¿Conviene un robot en una farmacia rural?</h2>
         <p>Automatizar una farmacia rural puede parecer innecesario, pero la eficiencia, ahorro de tiempo y precisión en
           la dispensación lo hacen una inversión valiosa incluso en zonas menos pobladas.</p>
@@ -40,7 +40,7 @@
 
       <!-- Noticia 2 -->
       <div class="news-card">
-        <img src="img/imginicio/2.jpeg" alt="Automatización y estrés" />
+        <img src="${pageContext.request.contextPath}/img/imginicio/2.jpeg" alt="Automatización y estrés" />
         <h2>La automatización reduce el estrés en la farmacia</h2>
         <p>El uso de robots y sistemas automatizados no solo mejora la eficiencia, también reduce significativamente el
           estrés y la carga mental del equipo farmacéutico.</p>
@@ -61,7 +61,7 @@
 
       <!-- Noticia 4 -->
       <div class="news-card">
-        <img src="img/imginicio/4.jpg" alt="Tecnología farmacia" />
+        <img src="${pageContext.request.contextPath}/img/imginicio/4.jpg" alt="Tecnología farmacia" />
         <h2>La farmacia del futuro ya está aquí</h2>
         <p>Robots que dispensan medicamentos, apps que controlan recetas y seguimiento del paciente desde casa. Así es
           como se reinventa la farmacia.</p>
@@ -71,7 +71,7 @@
 
       <!-- Noticia 5 -->
       <div class="news-card">
-        <img src="img/imginicio/5.jpg" alt="Farmacia online" />
+        <img src="${pageContext.request.contextPath}/img/imginicio/5.jpg" alt="Farmacia online" />
         <h2>Farmacias online: una nueva realidad</h2>
         <p>Las farmacias online están creciendo. La venta de medicamentos con receta y la asesoría en línea son los
           nuevos retos del sector farmacéutico.</p>
@@ -80,7 +80,7 @@
 
       <!-- Noticia 6 -->
       <div class="news-card">
-        <img src="img/imginicio/6.webp" alt="Automatización de procesos" />
+        <img src="${pageContext.request.contextPath}/img/imginicio/6.webp" alt="Automatización de procesos" />
         <h2>¿Cómo automatizar procesos en tu farmacia?</h2>
         <p>Desde software de gestión hasta robots para medicamentos: conoce las soluciones tecnológicas disponibles para
           modernizar tu farmacia.</p>
@@ -89,7 +89,7 @@
     </section>
 
     <section class="banner">
-      <img src="img/imginicio/publi2.jpeg" alt="Publicidad PharmaPTY" />
+      <img src="${pageContext.request.contextPath}/img/imginicio/publi2.jpeg" alt="Publicidad PharmaPTY" />
     </section>
 
    <%@ include file="../utils/footer.jsp" %>

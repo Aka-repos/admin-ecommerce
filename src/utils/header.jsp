@@ -33,7 +33,7 @@
 
     <nav class="main-nav">
       <a href="home.jsp">Inicio</a>
-      <a href="src/pages/products.jsp">Productos</a>
+      <a href="products.jsp">Productos</a>
       <a href=""> Servicios </a>
       <a href=""> Seguros </a>
       <a href="contactus.jsp">Contáctanos</a>

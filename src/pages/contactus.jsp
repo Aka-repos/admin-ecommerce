@@ -7,8 +7,8 @@
   <meta charset="UTF-8" />
   <title>PharmaPTY | Contáctanos</title>
   <link rel="icon" href="img/coazon.png" />
-  <link rel="stylesheet" href="contactus.css" />
-  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="../styles/contactus.css" />
+  <link rel="stylesheet" href="../styles/home.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
@@ -28,135 +28,14 @@
 <body>
 <!--INCLUIR HEADAER-->
   <%@ include file="/src/utils/header.jsp" %>
-  
+
   <!-- INCLUIR MODALES -->
-  <%@ include file="modal.jsp" %>
+  <%@ include file="/src/utils/modal.jsp" %>
   
   <main>
     <section class="team-section">
       <h2 class="section-title">Conoce a nuestro equipo</h2>
       <div class="team-container">
-
-        <!-- Cristina Jordán -->
-        <div class="team-card" tabindex="0">
-          <div class="card-inner">
-            <div class="card-front">
-              <div class="team-image">
-                <img src="img/imgcontact/integrante1.jpg" alt="Cristina Jordán" />
-              </div>
-              <div class="team-info">
-                <h3>
-                  Cristina Jordán
-                  <img class="flag-icon" src="https://flagcdn.com/w20/pa.png" alt="Panamá" title="Panamá" />
-                </h3>
-                <p>Encargada de la interfaz web responsiva para este proyecto.</p>
-              </div>
-            </div>
-            <div class="card-back">
-              <p><strong>Cédula:</strong> 8-1032-41<br>
-                <strong>Carrera:</strong> Ing. de Software<br>
-                <strong>Correo:</strong> cristina.jordan@utp.ac.pa
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Andrés Vega -->
-        <div class="team-card" tabindex="0">
-          <div class="card-inner">
-            <div class="card-front">
-              <div class="team-image">
-                <img src="img/imgcontact/integrante2.jpg" alt="Andrés Vega" />
-              </div>
-              <div class="team-info">
-                <h3>
-                  Andrés Vega
-                  <img class="flag-icon" src="https://flagcdn.com/w20/pa.png" alt="Panamá" title="Panamá" />
-                </h3>
-                <p>Encargado del backend de esta página.</p>
-              </div>
-            </div>
-            <div class="card-back">
-              <p><strong>Cédula:</strong> 8-1003-1210<br>
-                <strong>Carrera:</strong> Ing. de Software<br>
-                <strong>Correo:</strong> andres.vega@utp.ac.pa
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Alejandra Gómez -->
-        <div class="team-card" tabindex="0">
-          <div class="card-inner">
-            <div class="card-front">
-              <div class="team-image">
-                <img src="img/imgcontact/integrante3.jpg" alt="Alejandra Gómez" />
-              </div>
-              <div class="team-info">
-                <h3>
-                  Alejandra Gómez
-                  <img class="flag-icon" src="https://flagcdn.com/w20/co.png" alt="Colombia" title="Colombia" />
-                  <img class="flag-icon" src="https://flagcdn.com/w20/pa.png" alt="Panamá" title="Panamá" />
-                </h3>
-                <p>Encargada de los requerimientos para la página web.</p>
-              </div>
-            </div>
-            <div class="card-back">
-              <p><strong>Cédula:</strong> 20-14-7146<br>
-                <strong>Carrera:</strong> Ing. de Software<br>
-                <strong>Correo:</strong> alejandra.gomez@utp.ac.pa
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Raúl Medina -->
-        <div class="team-card" tabindex="0">
-          <div class="card-inner">
-            <div class="card-front">
-              <div class="team-image">
-                <img src="img/imgcontact/integrante4.jpg" alt="Raúl Medina" />
-              </div>
-              <div class="team-info">
-                <h3>
-                  Raúl Medina
-                  <img class="flag-icon" src="https://flagcdn.com/w20/pa.png" alt="Panamá" title="Panamá" />
-                </h3>
-                <p>Encargado del frontend de la página.</p>
-              </div>
-            </div>
-            <div class="card-back">
-              <p><strong>Cédula:</strong> 8-1021-948<br>
-                <strong>Carrera:</strong> Ing. de Software<br>
-                <strong>Correo:</strong> raul.medina@utp.ac.pa
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- William Rush -->
-        <div class="team-card" tabindex="0">
-          <div class="card-inner">
-            <div class="card-front">
-              <div class="team-image">
-                <img src="img/imgcontact/integrante5.jpg" alt="William Rush" />
-              </div>
-              <div class="team-info">
-                <h3>
-                  William Rush
-                  <img class="flag-icon" src="https://flagcdn.com/w20/pa.png" alt="Panamá" title="Panamá" />
-                </h3>
-                <p>Encargado de los requerimientos backend de esta página web.</p>
-              </div>
-            </div>
-            <div class="card-back">
-              <p><strong>Cédula:</strong> 8-1017-1144<br>
-                <strong>Carrera:</strong> Ing. de Software<br>
-                <strong>Correo:</strong> william.rush@utp.ac.pa
-              </p>
-            </div>
-          </div>
-        </div>
 
       </div>
     </section>
