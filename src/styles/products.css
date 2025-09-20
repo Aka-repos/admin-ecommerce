@@ -185,7 +185,7 @@ footer {
 
 
 main, section {
-  min-height: calc(100vh - 140px); /* altura total pantalla menos header + footer */
+   /* altura total pantalla menos header + footer */
   /* 140px es un ejemplo, suma la altura de header + footer */
   padding: 20px; /* para que no quede muy pegado */
   box-sizing: border-box;
