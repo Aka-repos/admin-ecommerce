@@ -276,33 +276,7 @@
 
 <body>
   <!-- Header base -->
-  <header class="sticky-header">
-    <div class="top-header">
-      <div class="logo">
-        <img src="../../img/coazon.png" alt="Logo" />
-        <h1 class="typing-effect">
-          <span class="pharma">PHARMA</span><span class="pty">PTY</span>
-        </h1>
-        <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
-      </div>
-      <div class="social-icons">
-        <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/pharma.pty/" class="icon instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="icon youtube"><i class="fab fa-youtube"></i></a>
-        <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
-      </div>
-      <div class="user-cart">
-        <a href="#" id="btnOpenLogin" class="login-btn"><i class="fas fa-user"></i> Iniciar sesión</a>
-        <a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i></a>
-      </div>
-    </div>
-
-    <nav class="main-nav">
-      <a href="home.jsp">Inicio</a>
-      <a href="products.jsp" class="active">Productos</a>
-      <a href="contactus.jsp">Contáctanos</a>
-    </nav>
-  </header>
+  <%@ include file="../utils/header.jsp" %>
   
   <!-- INCLUIR MODALES -->
   <%@ include file="../utils/modal.jsp" %>
